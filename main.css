@@ -1,0 +1,93 @@
+*{
+    font-family: cursive;
+    margin: 0;
+    color:rgb(255, 0, 0)
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+.navbar li{
+    padding: 10px;
+   
+}
+.navbar a:hover{
+    color: rgb(0, 119, 255);
+}
+.navbar a{
+    text-decoration: none;
+    color: #06dffc ;
+    font-size: 1.5em;
+}
+.container{
+    background-color: rgb(92, 92, 186);   
+    border: 3px solid #06dffc;
+    padding: 0;
+    
+}
+@media screen and (max-width : 600px) {
+    #nav1{
+        display: none;
+    }
+}
+@media screen and (min-width : 600px) {
+    #nav2{
+        display: none;
+    }
+}
+.con1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(92, 92, 186);
+}
+
+.con1:hover{
+    box-shadow: 0px 0px 100px rgb(92, 92, 186);
+}
+.moviecontainer{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mcon div{
+    
+    padding: 15px;
+    background-color: aqua;
+    margin-top: 10vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(92, 92, 186);
+}
+.myst{
+    display: inline-block;
+}
+iframe{
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgb(92, 92, 186);
+}
+iframe:hover{
+    box-shadow: 0px 0px 50px rgb(92, 92, 186);
+}
+body{
+    background-image: url("images/background.jpg");
+    background-size: cover;
+}
+label{
+    color: rgb(0, 238, 255);
+}
+.admincontainer{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right:auto;
+}
