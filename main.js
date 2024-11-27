@@ -5,10 +5,10 @@ document.getElementById("horror").style.display="none";
 document.getElementById("mystery").style.display="none";
 
 if(movie.value === "2"){
-    document.getElementById("horror").style.display="block";
+    document.getElementById("horror").style.display="flex";
     
 }else if(movie.value === "3"){   
-    document.getElementById("mystery").style.display="block";
+    document.getElementById("mystery").style.display="flex";
 }
 });
 

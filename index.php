@@ -45,13 +45,14 @@ $result = $con->query("SELECT * FROM movie_list");
                     <option value="4">Thriller</option>
                 </select>
                 </div>
-                <div class="moviecontainer">
+            </div>
+                
                     <div id="horror" style="display: none;" class="mcon">
                         <?php
                         $result = $con->query("SELECT * FROM movie_list WHERE catagory = 'Horror'");
                         // Output movie details
                         while ($row = $result->fetch_assoc()) {
-                            echo '<div id="'.$row["id"].'" class="horr">
+                            echo '<div id="horr">
                                 <strong>' .$row["name"] . '</strong> <br><br>
                                 <strong>Catagory:</strong> '.$row["catagory"] . '<br>'.
                                 $row["embeddedcode"] . '<br>
@@ -64,7 +65,7 @@ $result = $con->query("SELECT * FROM movie_list");
                         $result = $con->query("SELECT * FROM movie_list WHERE catagory = 'mystery'");
                         
                         while ($row = $result->fetch_assoc()) {
-                            echo '<div id="'.$row["id"].'" class="myst">
+                            echo '<div id="myst">
                                 <strong>' .$row["name"] . '</strong> <br><br>
                                 <strong>Catagory:</strong> '.$row["catagory"] . '<br>'.
                                 $row["embeddedcode"] . '<br>
@@ -73,8 +74,6 @@ $result = $con->query("SELECT * FROM movie_list");
                   
                         ?>
                     </div>
-                </div>
-            </div>
 
             <script src='main.js'></script><!--If you declare this statement in head tag js file will not work-->
        </body>

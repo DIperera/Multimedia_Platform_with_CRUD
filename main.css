@@ -55,22 +55,16 @@
 .con1:hover{
     box-shadow: 0px 0px 100px rgb(92, 92, 186);
 }
-.moviecontainer{
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.mcon div{
-    
-    padding: 15px;
+
+.mcon{   
     background-color: aqua;
     margin-top: 10vh;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(92, 92, 186);
+    overflow: scroll;
 }
-.myst{
-    display: inline-block;
+#myst, #horr{
+    padding: 15px;
 }
 iframe{
     padding: 15px;
